@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juan Correa Featured Project: The Cook's Nook</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poiret+One&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body class="portfolio-item-individual-body">
+        <header class="portfolio-item-header">
+            
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#competencies" class="nav__link">Competencies</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="index.html#personal-life" class="nav__link">Personal Life</a></li> 
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro portfolio-item-heading">
+                <strong>The Cook's Nook</strong>
+            </h1>
+            
+            <p class="section__subtitle section__subtitle--intro portfolio-item-individual-subtitle">An app to help users keep all recipes in one place.</p>
+            <img src="img/the-cooks-nook.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            
+            <img src="/img/edamam.jpeg" class="edamam-img" alt="Edamam API logo">
+            
+            <p>The goal of this project was to create and app that 1) authenticated and authorized users, 2) made requests to an external API, 3) implemented full CRUD, and 4) used Python/Flask for the back end. 
+            </p> 
+            <br>
+            <div class="tech__stack">
+            <div class="tech__stack--component">
+            <h3>Front End</h3>
+            <Ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>JQuery</li>
+                <li>Axios</li>
+            </Ul>
+            </div>
+            <div class="tech__stack--component">
+            <h3>Back End</h3>
+            <Ul>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQL Alchemy</li>
+                <li>Bcrypt</li>
+                <li>WTForms</li>
+            </Ul>
+            </div>
+            <div class="tech__stack--component">
+            <h3>Database</h3>
+            <Ul>
+                <li>PostgreSQL</li>
+            </Ul>
+            </div>
+            </div>
+            <p>I decided to create an app that used a mixture of client-side and server-side rendering. All user requests to get new recipes based on search results are rendered on the client-side using AJAX via Axios. The client makes a request to the internal API in Flask, which in turn requests to Edamam's API. This helps maintain the client side decoupled from the logic to hit the external API and allows for error handling on the backend. 
+            </p>
+            <p>
+            Users can also search for saved and personal recipes by typing on the searchbar and have results rendered real-time. Any recipes saved or created by the user are stored in the database in order to optimize this real-time search functionality. 
+            </p>
+            <p>
+            All user pages to view, save, create, update, or delete recipes are rendered server side.</p>
+            <img src="img/longcook.png" class="long-pic" alt="photo of user's favorite recipes page">
+           
+            <a href="https://github.com/JuanSebastianCorrea/Capstone1" class="project-action-btn">Source Code</a>
+            <a href="https://thecooksnook.herokuapp.com/" class="project-action-btn">View App</a>
+            
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:jcossa1989@gmail.com" class="footer__link">jcossa1989@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/juansebastiancorrea/">
+                        <i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
